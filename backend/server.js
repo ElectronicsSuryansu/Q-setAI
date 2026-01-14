@@ -40,11 +40,13 @@ app.post("/upload-pdf", upload.single("pdf"), async (req, res) => {
         const prompt = `
 You are an exam question setter.
 Based ONLY on the following study material, generate:
-- 5 exam-oriented questions
+- Make it like IOE or university level questions
+- Pulchowk Campus style questions
 - Mix of theory and numerical (if applicable)
 - Questions should sound like real university exams
 - Do NOT add answers
 - Do NOT use AI-style wording
+
 
 Study Material:
 ${pdfShort}
